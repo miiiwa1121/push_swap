@@ -19,7 +19,9 @@ int push(data_t push_data)
 }
 // data_t 型の引数 push_data をとり，それをスタックstack_data に積み，整数値 SUCCESS を関数値として返す。
 // ただし，スタックが満杯であるときは積まずに，整数値 FAILURE を関数値として返す。
-// stack_num は，現在スタックに積まれているデータの個数を保持しているが，それは stack_data[0] から stack_data[stack_num - 1] までにデータが入っていることを意味している。したがって，新しいデータは stack_data[stack_num] に保存することになる。そして保存した後， stack_num の値を1増やす。
+// stack_num は，現在スタックに積まれているデータの個数を保持しているが，それは stack_data[0] から stack_data[stack_num - 1] までにデータが入っていることを意味している。
+//したがって，新しいデータは stack_data[stack_num] に保存することになる。
+//そして保存した後， stack_num の値を1増やす。
 
 int pop(data_t *pop_data)
 {
@@ -31,7 +33,8 @@ int pop(data_t *pop_data)
         return FAILURE;
     }
 }
-// スタックが空でないとき，stack_data にある最後の値を *pop_data に代入し，stack_num の値を 1 減じて、戻り値 SUCCESS を返す。スタックが空であるときには何もしないで、戻り値 FAILURE を返す（*pop_data の値も変化させない）。
+// スタックが空でないとき，stack_data にある最後の値を *pop_data に代入し，stack_num の値を 1 減じて、戻り値 SUCCESS を返す。
+//スタックが空であるときには何もしないで、戻り値 FAILURE を返す（*pop_data の値も変化させない）。
 
 void stackPrint()
 {
