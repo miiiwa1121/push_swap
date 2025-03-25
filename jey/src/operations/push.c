@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 16:17:42 by jtakahas          #+#    #+#             */
-/*   Updated: 2025/03/24 00:54:30 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/03/25 15:35:31 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,12 +65,12 @@ bool	push_to(t_stack *from, t_stack *to, char c)
 	return (false);
 }
 
-bool	pa(t_stack *stack_a, t_stack *stack_b)
+bool	pa(t_stack *stack_a, t_stack *stack_b)//stack_bの一番上の値をstack_aに移動
 {
 	return (push_to(stack_b, stack_a, 'a'));
 }
 
-bool	pb(t_stack *stack_a, t_stack *stack_b)
+bool	pb(t_stack *stack_a, t_stack *stack_b)//stack_aの一番上の値をstack_bに移動
 {
 	return (push_to(stack_a, stack_b, 'b'));
 }

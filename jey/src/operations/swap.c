@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   swap.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtakahas <jtakahas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 16:19:05 by jtakahas          #+#    #+#             */
-/*   Updated: 2024/05/06 16:40:09 by jtakahas         ###   ########.fr       */
+/*   Updated: 2025/03/25 13:13:05 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,13 +18,13 @@ void	swap(t_stack *stack, char c)
 	t_node	*second;
 	int		temp;
 
-	if (is_empty(stack) || stack->top->next == stack->top)
+	if (is_empty(stack) || stack->top->next == stack->top)//stackが空の場合や要素が1つしかない場合は何もしない
 		return ;
-	first = stack->top;
-	second = first->next;
-	temp = first->data;
-	first->data = second->data;
-	second->data = temp;
+	first = stack->top;//firstにstackのtopを代入
+	second = first->next;//secondにfirstのnextを代入
+	temp = first->data;//tempにfirstのdataを代入
+	first->data = second->data;//firstのdataにsecondのdataを代入
+	second->data = temp;//secondのdataにtempを代入
 	ft_printf("s%c\n", c);
 }
 

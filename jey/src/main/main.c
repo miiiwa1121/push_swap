@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 18:03:01 by jtakahas          #+#    #+#             */
-/*   Updated: 2025/03/24 01:21:17 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/03/25 13:05:59 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,10 +83,9 @@ int	main(int ac, char **av)
 	data_set_to_array(len_data, ++av, data);//入力されたデータを配列に格納//++avは値を増加した後に関数に渡す
 	stack_init(&stack_a, &stack_b);//stack_aとstack_bを初期化
 	data_set_to_stack(len_data, &stack_a, data);//stack_aにデータを格納
-// ----------------------------------------------------------------------------------------------------------------ここまで終わった
 	free(data);
 	if (len_data != 1)//データが1つの場合は何もしない
-		push_swap(len_data, &stack_a, &stack_b);//ソート処理へ
+		push_swap(len_data, &stack_a, &stack_b);//データの格納されたスタックと空のスタックを引数に、ソート処理へ
 	free_stack(&stack_a);//stack_aを解放
 	free_stack(&stack_b);//stack_bを解放
 	return (0);

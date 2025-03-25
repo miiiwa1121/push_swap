@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_info.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtakahas <jtakahas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 16:25:52 by jtakahas          #+#    #+#             */
-/*   Updated: 2024/05/06 16:54:36 by jtakahas         ###   ########.fr       */
+/*   Updated: 2025/03/25 14:57:32 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,37 +29,37 @@ int	get_len_stack(t_stack *stack)
 	return (len);
 }
 
-int	get_max_data(t_stack *stack)
+int	get_max_data(t_stack *stack)//stackの中で最大の値を取得
 {
 	t_node	*temp;
 	int		max;
 	int		len;
 
-	temp = stack->top;
-	max = temp->data;
+	temp = stack->top;//tempにstackのtopのアドレスを代入
+	max = temp->data;//maxにtempのdataを代入
 	len = get_len_stack(stack);
-	while (len > 0)
+	while (len > 0)//stackの長さが0より大きい間繰り返す
 	{
-		if (temp->data > max)
-			max = temp->data;
-		temp = temp->next;
+		if (temp->data > max)//tempのdataがmaxより大きい場合
+			max = temp->data;//maxにtempのdataを代入
+		temp = temp->next;//tempにtempのnextを代入
 		len--;
 	}
 	return (max);
 }
 
-int	get_min_data(t_stack *stack)
+int	get_min_data(t_stack *stack)//stackの中で最小の値を取得
 {
 	t_node	*temp;
 	int		min;
 	int		len;
 
-	temp = stack->top;
+	temp = stack->top;//
 	min = temp->data;
 	len = get_len_stack(stack);
 	while (len > 0)
 	{
-		if (temp->data < min)
+		if (temp->data < min)//tempのdataがminより小さい場合
 			min = temp->data;
 		temp = temp->next;
 		len--;
@@ -67,21 +67,21 @@ int	get_min_data(t_stack *stack)
 	return (min);
 }
 
-int	get_index_from_data(t_stack *stack, int data)
+int	get_index_from_data(t_stack *stack, int data)//dataのindexを取得
 {
 	t_node	*temp;
 	int		index;
 
-	temp = stack->top;
+	temp = stack->top;//tempにstackのtopのアドレスを格納
 	index = 0;
-	while (temp->next != stack->top)
+	while (temp->next != stack->top)//tempのnextがtopでない間繰り返す(temp->next = stack->topの場合は一周したことになる)
 	{
-		if (temp->data == data)
-			return (index);
-		temp = temp->next;
+		if (temp->data == data)//tempのdataがdataと等しい場合
+			return (index);//indexを返す
+		temp = temp->next;//tempにtempのnextを代入
 		index++;
 	}
-	if (temp->data == data)
+	if (temp->data == data)//@このif文はなくてもいい気がする
 		return (index);
 	return (-1);
 }
