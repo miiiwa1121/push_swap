@@ -3,6 +3,9 @@
 #include <stdbool.h>
 #include <limits.h>
 #include <ctype.h>
+#include "push_swap.h"
+
+
 
 static char	*pass_space(char *str)//空白をスキップ
 {
@@ -63,10 +66,10 @@ int set_array(int len_data, char **av, int *data)//コマンドライン引数�
 
     index = 0;
     while(len_data > index){
-        if(!atoi_custom(av[index],num_data))
+        if(!atoi_custom(av[index],&num_data))
         {
             free(data);
-            return (NULL);
+            return (0);
         }
         data[index] = num_data;
         index++;
@@ -80,13 +83,13 @@ int main(int ac, char **av)
     int len_data;
 
     if (ac < 2)
-		return (NULL);
+		return (0);
     len_data = ac - 1;
     data = malloc(sizeof(int) * len_data);
     if (!data)
     {
         free(data);
-        return (NULL);
+        return (0);
     }
     if (set_array(len_data, ++av, data) == -1)
 		return (1);
