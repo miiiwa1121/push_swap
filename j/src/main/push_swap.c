@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:19:40 by jtakahas          #+#    #+#             */
-/*   Updated: 2025/03/25 15:51:53 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/04/08 18:45:10 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ void	push_swap(int len, t_stack *stack_a, t_stack *stack_b)//ソートする関�
 	if (is_sorted(stack_a))//stack_aがソートされている場合		//----------------------koreyattenai
 		return ;
 	if (len == 2)//stack_aのデータが2つの場合
-		sa(stack_a);//@1,2の場合、2,1の場合どちらの場合でも入れ替えを行ってしまう気がする
+		sa(stack_a);
 	else if (len == 3)//stack_aのデータが3つの場合
 		sort_len_3(stack_a);
 	else if (len == 4)//stack_aのデータが4つの場合

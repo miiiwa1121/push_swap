@@ -24,3 +24,51 @@ rr: ra と rb を同時に実行します。
 rra: スタック a を逆回転させます（下の要素を上に移動させる）。
 rrb: スタック b を逆回転させます。
 rrr: rra と rrb を同時に実行します。
+
+stack_init  
+stack_index_init  
+both_stack_index_init  
+free_stack  
+is_empty  
+is_sorted  
+get_len_stack  
+get_max_data  
+get_min_data  
+get_index_from_data  
+print_stack  
+push_swap  
+swap  
+rotate  
+reverse_rotate  
+push  
+push_to  
+sa  
+sb  
+ss  
+ra  
+rb  
+rr  
+rra  
+rrb  
+rrr  
+pa  
+pb  
+        error_print  
+        error_print_exit  
+push_swap_atoi  
+sort_len_3  
+sort  
+sort_reverse  
+get_target_from_b  
+get_target_from_a  
+calculation_command  
+do_command  
+command_init  
+commnad_set_rarb  
+commnad_set_rrarrb  
+command_set_rarrb  
+command_set_rrarb  
+register_command_push_a  
+register_command_push_b  
+serch_optimal_command_push_to_a  
+serch_optimal_command_pus
