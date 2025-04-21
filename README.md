@@ -12,7 +12,7 @@
 - [メモ](#メモ)
 
 
-使用する操作
+使用操作一覧
 sa: スタック a の上から2つの要素を交換します。
 sb: スタック b の上から2つの要素を交換します。
 ss: sa と sb を同時に実行します。
@@ -24,6 +24,9 @@ rr: ra と rb を同時に実行します。
 rra: スタック a を逆回転させます（下の要素を上に移動させる）。
 rrb: スタック b を逆回転させます。
 rrr: rra と rrb を同時に実行します。
+
+利用したビジュアライザー
+https://github.com/o-reo/push_swap_visualizer
 
 stack_init  
 stack_index_init  
@@ -72,3 +75,4 @@ register_command_push_a
 register_command_push_b  
 serch_optimal_command_push_to_a  
 serch_optimal_command_pus
+
