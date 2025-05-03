@@ -56,8 +56,8 @@ rrb
 rrr  
 pa  
 pb  
-        error_print  
-        error_print_exit  
+error_print  
+error_print_exit  
 push_swap_atoi  
 sort_len_3  
 sort  
