@@ -6,11 +6,11 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 11:14:11 by jdecorte          #+#    #+#             */
-/*   Updated: 2024/12/22 11:08:00 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/03 14:45:42 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/get_next_line_bonus.h"
+#include "../../include/get_next_line.h"
 
 void	*ft_free(void *p)
 {

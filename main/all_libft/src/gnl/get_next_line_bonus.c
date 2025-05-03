@@ -6,11 +6,11 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/19 11:09:06 by jdecorte          #+#    #+#             */
-/*   Updated: 2024/12/22 11:07:54 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/03 14:45:37 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../include/get_next_line_bonus.h"
+#include "../../include/get_next_line.h"
 #include <stdio.h>
 
 char	*join_free(char *save, char *buff)

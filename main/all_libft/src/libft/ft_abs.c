@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_abs.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 14:33:47 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/03 14:33:50 by mtsubasa         ###   ########.fr       */
+/*   Created: 2024/05/09 17:30:24 by jtakahas          #+#    #+#             */
+/*   Updated: 2025/05/03 14:46:49 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <limits.h>
 
-int	ft_isspace(int nbr)
+int	ft_abs(int nbr)
 {
-	if (nbr == ' ' || (9 <= nbr && nbr <= 13))
-		return (1);
-	return (0);
+	if (nbr == INT_MIN)
+		return (0);
+	if (nbr < 0)
+		return (-nbr);
+	return (nbr);
 }

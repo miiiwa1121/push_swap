@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/11 21:34:05 by mtsubasa          #+#    #+#             */
-/*   Updated: 2024/12/23 18:34:03 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/03 14:36:54 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,14 @@ typedef struct s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+int					ft_abs(int nbr);
 void				ft_bzero(void *s, size_t n);
 void				*ft_calloc(size_t count, size_t size);
 int					ft_isalnum(int i);
 int					ft_isalpha(int i);
 int					ft_isascii(int i);
 int					ft_isdigit(int i);
+int					ft_isspace(int nbr);
 int					ft_isprint(int i);
 void				*ft_memchr(const void *s, int c, size_t n);
 int					ft_memcmp(const void *s1, const void *s2, size_t n);

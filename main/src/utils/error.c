@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   error.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/03 14:33:47 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/03 14:33:50 by mtsubasa         ###   ########.fr       */
+/*   Created: 2024/04/29 13:27:11 by jtakahas          #+#    #+#             */
+/*   Updated: 2025/03/24 00:10:58 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "push_swap.h"
 
-int	ft_isspace(int nbr)
+void	error_print(void)
 {
-	if (nbr == ' ' || (9 <= nbr && nbr <= 13))
-		return (1);
-	return (0);
+	ft_printf("Error\n");
+}
+
+void	error_print_exit(void)
+{
+	ft_printf("Error\n");
+	exit(1);//即座にプログラムを終了
 }
