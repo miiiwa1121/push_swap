@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   rotate.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtakahas <jtakahas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/06 16:18:44 by jtakahas          #+#    #+#             */
-/*   Updated: 2024/05/06 16:18:49 by jtakahas         ###   ########.fr       */
+/*   Created: 2025/05/05 13:35:19 by mtsubasa          #+#    #+#             */
+/*   Updated: 2025/05/05 13:35:20 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

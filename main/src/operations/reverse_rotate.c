@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   reverse_rotate.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jtakahas <jtakahas@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/06 16:18:24 by jtakahas          #+#    #+#             */
-/*   Updated: 2024/05/06 16:18:31 by jtakahas         ###   ########.fr       */
+/*   Created: 2025/05/05 13:35:14 by mtsubasa          #+#    #+#             */
+/*   Updated: 2025/05/05 13:35:15 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 
