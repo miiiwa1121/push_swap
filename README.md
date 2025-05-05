@@ -95,6 +95,7 @@ typedef struct s_stack
 }	t_stack;
 ```
 ### コマンドをカウントし保存しておくための構造体
+- プッシュが実行される際に数字ごとに最適なコマンドを保存しておく必要がある。
 ```
 typedef struct s_command
 {
