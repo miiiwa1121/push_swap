@@ -19,7 +19,7 @@ typedef struct s_command
 	int		rrb;
 	int		rr;
 	int		rrr;
-}	t_command;//
+}	t_command;
 
 // node of the stack
 typedef struct s_node
@@ -34,7 +34,7 @@ typedef struct s_node
 // stack structure
 typedef struct s_stack
 {
-	t_node	*top;
+	t_node	*head;
 }	t_stack;
 // stack management functions
 void		stack_init(t_stack *stack, t_stack *stack_b);
