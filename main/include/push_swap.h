@@ -34,8 +34,9 @@ typedef struct s_node
 // stack structure
 typedef struct s_stack
 {
-	t_node	*head;
+	t_node	*top;
 }	t_stack;
+
 // stack management functions
 void		stack_init(t_stack *stack, t_stack *stack_b);
 void		stack_index_init(t_stack *stack);
