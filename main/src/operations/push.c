@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:35:09 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/11 15:48:31 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/11 17:16:00 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ bool	push(t_stack *stack, int data)//stackのtopにデータを追加//stackに�
 	new_node = (t_node *)malloc(sizeof(t_node));
 	if (new_node == NULL)
 		return (false);
-	// command = command_init();//commandの初期化
+	command = command_init();//commandの初期化
 	new_node->data = data;
-	new_node->command = command_init();//new_nodeのcommandを初期化
+	new_node->command = command;//new_nodeのcommandを初期化
 	if (is_empty(stack))
 	{
 		new_node->prev = new_node;//全ての矢印が自分を指す

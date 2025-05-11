@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:35:39 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/11 17:07:14 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/11 19:30:04 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static int	rotate_count_with_ab(int a_count, int b_count)
 	return (with + ft_abs(a_count - b_count));
 }
 
-static int	(int ra_rb, int rra_rrb, int ra_rrb, int rra_rb)
+static int	get_smallest(int ra_rb, int rra_rrb, int ra_rrb, int rra_rb)
 {
 	if (ra_rb <= rra_rrb
 		&& ra_rb <= ra_rrb
@@ -67,7 +67,7 @@ t_command	calculation_command(int a_index, int b_index, int a_len, int b_len)
 	ra_rrb = a_index + b_len - b_index;
 	rra_rb = a_len - a_index + b_index;
 	command = command_init();
-	if ((ra_rb, rra_rrb, ra_rrb, rra_rb) == RA_RB)
+	if (get_smallest(ra_rb, rra_rrb, ra_rrb, rra_rb) == RA_RB)
 		commnad_set_rarb(&command, a_index, b_index);
 	else if (get_smallest(ra_rb, rra_rrb, ra_rrb, rra_rb) == RRA_RRB)
 		commnad_set_rrarrb(&command, a_len - a_index, b_len - b_index);
