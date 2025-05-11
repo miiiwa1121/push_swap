@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 14:59:45 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/03 14:59:47 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/10 17:53:18 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ void	sort_len_4(t_stack *stack_a, t_stack *stack_b)
 
 void	push_swap(int len, t_stack *stack_a, t_stack *stack_b)//ソートする関数	
 {
-	if (is_sorted(stack_a))//stack_aがソートされている場合		//----------------------koreyattenai
+	if (is_sorted(stack_a))//stack_aがソートされている場合
 		return ;
 	if (len == 2)//stack_aのデータが2つの場合
 		sa(stack_a);
@@ -66,7 +66,6 @@ void	push_swap(int len, t_stack *stack_a, t_stack *stack_b)//ソートする関�
 		sort_len_4(stack_a, stack_b);
 	else//stack_aのデータが5つ以上の場合
 	{
-		//----------------------kokomade
 		if (!sort(stack_a, stack_b))
 		{
 			free_stack(stack_a);

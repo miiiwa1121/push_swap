@@ -149,6 +149,15 @@ typedef struct s_command
 ## ビジュアライザー
 https://github.com/o-reo/push_swap_visualizer
 
+## 質問
+```
+Q1. free_stack()でtopはfreeではなく、NULLを代入しているのはなぜですか？
+A1. freeはメモリの 中身（ノードのデータ）を解放し、NULLの代入はポインタの値を０にすることです。つまり、これら二つを組み合わせることで、完璧な解放を実現している。
+```
+```
+Q2. 
+```
+
 ## 関数
 > ### command\_utils
 #### *command\_utils.c*

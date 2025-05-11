@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:35:19 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/05 13:35:20 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/11 16:05:28 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include "push_swap.h"
 
-void	rotate(t_stack *stack, char c)
+void	rotate(t_stack *stack, char c)//stackを回転させる//stackのtopを一つ後ろにずらす
 {
 	if (is_empty(stack) || stack->top->next == stack->top)
 		return ;

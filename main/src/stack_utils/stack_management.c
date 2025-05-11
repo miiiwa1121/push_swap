@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:34:59 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/05 13:35:00 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/10 16:00:36 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,13 +20,13 @@ void	stack_init(t_stack *stack_a, t_stack *stack_b)//stackの初期化
 	stack_b->top = NULL;//topをNULLにする
 }
 
-void	both_stack_index_init(t_stack *stack_a, t_stack *stack_b)
+void	both_stack_index_init(t_stack *stack_a, t_stack *stack_b)//両方のstackのindexを初期化
 {
 	stack_index_init(stack_a);
 	stack_index_init(stack_b);
 }
 
-void	stack_index_init(t_stack *stack)
+void	stack_index_init(t_stack *stack)//stackのindexを初期化//indexに0123...と順番に値を代入していく
 {
 	t_node	*temp;
 	int		index;

@@ -6,7 +6,7 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/06 00:49:15 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/06 00:49:16 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/10 15:36:42 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,8 +44,9 @@ typedef struct s_node
 
 typedef struct s_stack
 {
-	t_node	*head;
+	t_node	*top;
 }	t_stack;
+
 void		stack_init(t_stack *stack, t_stack *stack_b);
 void		stack_index_init(t_stack *stack);
 void		both_stack_index_init(t_stack *stack_a, t_stack *stack_b);

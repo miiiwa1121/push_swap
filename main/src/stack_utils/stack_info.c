@@ -6,15 +6,13 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:34:55 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/05 13:34:56 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/10 18:36:55 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "push_swap.h"
 
-int	get_len_stack(t_stack *stack)
+int	get_len_stack(t_stack *stack)//stackの長さを取得
 {
 	int		len;
 	t_node	*temp;
@@ -56,7 +54,7 @@ int	get_min_data(t_stack *stack)//stackの中で最小の値を取得
 	int		min;
 	int		len;
 
-	temp = stack->top;//
+	temp = stack->top;
 	min = temp->data;
 	len = get_len_stack(stack);
 	while (len > 0)
@@ -74,35 +72,35 @@ int	get_index_from_data(t_stack *stack, int data)//dataのindexを取得
 	t_node	*temp;
 	int		index;
 
-	temp = stack->top;//tempにstackのtopのアドレスを格納
+	temp = stack->top;
 	index = 0;
-	while (temp->next != stack->top)//tempのnextがtopでない間繰り返す(temp->next = stack->topの場合は一周したことになる)
+	while (temp->next != stack->top)
 	{
-		if (temp->data == data)//tempのdataがdataと等しい場合
-			return (index);//indexを返す
-		temp = temp->next;//tempにtempのnextを代入
+		if (temp->data == data)
+			return (index);
+		temp = temp->next;
 		index++;
 	}
-	if (temp->data == data)//@このif文はなくてもいい気がする
+	if (temp->data == data)
 		return (index);
 	return (-1);
 }
 
-void	print_stack(t_stack *stack, char *name)
-{
-	t_node	*temp;
+// void	print_stack(t_stack *stack, char *name)//stackの中身を表示
+// {
+// 	t_node	*temp;
 
-	if (is_empty(stack))
-	{
-		ft_printf("%s is empty\n", name);
-		return ;
-	}
-	temp = stack->top;
-	ft_printf("%s: ", name);
-	while (temp->next != stack->top)
-	{
-		ft_printf("%d ", temp->data);
-		temp = temp->next;
-	}
-	ft_printf("%d\n", temp->data);
-}
+// 	if (is_empty(stack))
+// 	{
+// 		ft_printf("%s is empty\n", name);
+// 		return ;
+// 	}
+// 	temp = stack->top;
+// 	ft_printf("%s: ", name);
+// 	while (temp->next != stack->top)
+// 	{
+// 		ft_printf("%d ", temp->data);
+// 		temp = temp->next;
+// 	}
+// 	ft_printf("%d\n", temp->data);
+// }

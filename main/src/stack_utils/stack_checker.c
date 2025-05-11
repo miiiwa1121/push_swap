@@ -6,14 +6,14 @@
 /*   By: mtsubasa <mtsubasa@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/05 13:34:49 by mtsubasa          #+#    #+#             */
-/*   Updated: 2025/05/05 13:34:51 by mtsubasa         ###   ########.fr       */
+/*   Updated: 2025/05/11 14:24:03 by mtsubasa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "push_swap.h"
 
-bool	is_sorted(t_stack *stack)
+bool	is_sorted(t_stack *stack)//stackがソートされているかどうかを判定
 {
 	t_node	*temp;
 
